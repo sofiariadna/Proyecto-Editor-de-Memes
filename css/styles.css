@@ -1,0 +1,130 @@
+:root {
+    --principalPadding: 35px 250px;
+    --backgroundColor: #fff
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.body {
+    background-color: rgb(23, 26, 43);
+}
+
+
+/*Sección Header*/
+
+.title {
+    margin-top: 19px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(36, 36, 49);
+    font-family: 'Inter', sans-serif;
+    color: var(--backgroundColor);
+    z-index: 1;
+}
+
+.buttons-container {
+    margin: 5px;
+    padding: 10px;
+}
+
+.button {
+
+    margin: 6px;
+    padding: 7px;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(36, 36, 49);
+    border-style: none;
+    color: var(--backgroundColor);
+    cursor: pointer;
+    line-height: 1;
+    font-size: 0.8rem;
+    transition: 0.1s;
+
+    
+}
+
+.button:hover {
+
+    background-color: rgb(125, 131, 136);
+    color: var(--backgroundColor);
+    border-radius: 4px;
+    
+    
+}
+
+
+/*Fin Sección Header*/
+
+
+/*Sección Container de Meme*/
+
+.container {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px auto;
+    width: 20%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+
+.top-text {
+
+    text-align: center;
+    padding: var(--principalPadding);
+    background-color: #fff;
+
+}
+
+.imagen {
+    
+    height: 100%;
+    padding: 120px;
+    flex-grow: 1;
+    background-color: black;
+}
+
+.bottom-text {
+
+    text-align: center;
+    padding: var(--principalPadding);
+    background-color: var(--backgroundColor);
+    
+}
+
+.download-button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    margin: 20px;
+    background-color: rgb(10, 105, 10);
+    border-style: none;
+    border-radius: 3px;
+    color: var(--backgroundColor);
+    cursor: pointer;
+    transition: 0.1s;
+    
+}
+
+.download-button:hover {
+    background-color: rgb(1, 61, 1);
+}
+
+
+
+
