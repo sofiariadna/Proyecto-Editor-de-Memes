@@ -4,6 +4,20 @@
     --fontFamily : 'Inter', sans-serif;
     --inputBackgroundColor: rgb(57, 61, 83);
     --inputHover: rgb(75, 78, 97);
+    
+    /*Estilos para las sidebar*/
+
+    --displaySidebar: block;
+    --flexDirectionSidebar: column;
+    --backgroundColorSidebar: rgb(55, 52, 70);
+    --textAlignSidebar: left;
+    --fontFamilySidebar: var(--fontFamily);
+    --colorSidebar: var(--backgroundColor);
+    --widthSidebar: 15%;
+    --heightSidebar: 100%;
+    --paddingSidebar: 15px;
+    --positionSidebar:absolute;
+    --rightSidebar: 0;
 
 }
 
@@ -306,17 +320,217 @@ input[type="range"]::-webkit-slider-thumb {
 
 .text-sidebar {
     
-    display: block;
-    flex-direction: column;
-    background-color: rgb(55, 52, 70);
-    text-align: left;
-    font-family: var(--fontFamily);
-    color: var(--backgroundColor);
-    width: 15%;
-    height: 100%;
-    padding: 15px;
-    position:absolute;
-    right: 0;
+    display: var(--displaySidebar);
+    flex-direction: var(--flexDirectionSidebar);
+    background-color: var(--backgroundColorSidebar);
+    text-align: var(--textAlignSidebar);
+    font-family: var(--fontFamilySidebar);
+    color: var(--colorSidebar);
+    width: var(--widthSidebar);
+    height: var(--heightSidebar);
+    padding: var(--paddingSidebar);
+    position:var(--positionSidebar);
+    right: var(--rightSidebar);
 
+}
+
+.text {
+
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.superior {
+
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.label {
+    font-size: 0.70rem;
+    font-weight: bold;
+}
+
+.form-text-box-values {
+
+    margin-top: 5px;
+    height: 40px;
+    background-color: var(--inputBackgroundColor);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 0.70rem;
+    transition: 0.3s;
+
+}
+
+.form-text-box-values:hover {
+    
+    background-color: var(--inputHover);
+    outline-color: rgb(75, 78, 97)
+
+}
+
+.checkbox {
+    font-size: 0.70rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fonts {
+    display: flex;
+    flex-direction: column;
+}
+
+.fonts-values-column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#number {
+
+    padding: 5px;
+    width: 50%;
+    margin-top: 5px;
+    background-color: var(--inputBackgroundColor);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 0.70rem;
+    transition: 0.3s;
+
+}
+
+#number:hover {
+
+    background-color: var(--inputHover);
+    outline-color: rgb(75, 78, 97);
+
+}
+
+
+.container-btn-and-fontsize {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-align {
+
+    background-color:var(--inputBackgroundColor);
+    padding: 12px;
+    margin-left: 5px;
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.70rem;
+    transition: 0.3s;
+    
+}
+
+.button-align:hover {
+    background-color: var(--inputHover);
+    outline-color: rgb(75, 78, 97);
+
+}
+
+
+/*Aca van a ir los buttons*/
+
+
+
+
+
+.color-and-background {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.select-color {
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+.change-color-and-bg-values {
+
+    margin-top: 5px;
+    background-color: var(--inputBackgroundColor);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    
+
+}
+
+.select-background {
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.contouring {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contouring-row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.contouring-btn {
+
+    display: block;
+    margin-top: 5px;
+    margin-left: 1.7px;
+    margin-bottom: 10px;
+    padding: 15px;
+    height: 40px;
+    background-color: var(--inputBackgroundColor);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 0.70rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.contouring-btn:hover {
+
+    background-color: var(--inputHover);
+    outline-color: rgb(75, 78, 97)
+
+}
+
+.space {
+    display: flex;
+    flex-direction: column;
+}
+
+.leading {
+    display: flex;
+    flex-direction: column;
 }
 
