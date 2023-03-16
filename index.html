@@ -12,10 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 
     <title>Editor de memes</title>
     <meta name="description" content="Con esta aplicación podrás diseñar tu meme de preferencia y descargarlo para compartirlo en donde quieras.">
-    <meta name="keywords" content="HTML5, CSS3, JavaScript, developer, app">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, developer, app, meme, memes">
 </head>
 
 
@@ -25,31 +27,222 @@
 
 <header class="header">
 
-<h1 class="title">Generador de Memes</h1>
+    <h1 class="title">Generador de Memes</h1>
 
-<section class="buttons-container">
+    <nav class="buttons-container">
 
-    <button type="button" class="button"> 
+        <button type="button" class="button"> 
         <i class="icon ion-md-images"> Imagen </i>
-    </button>
+        </button>
 
-    <button type="button" class="button">    
+        <button type="button" class="button">    
         <i class="icon ion-ios-create"> Texto </i>
-    </button>
+        </button>
 
-    <button type="button" class="button">
+        <button type="button" class="button">
         <i class="icon ion-ios-sunny"> Modo oscuro </i>
-    </button>
+        </button>
     
-</section>
+    </nav>
 
 </header>
 
 <!---Fin Sección Header-->
 
+<!--Comienzo Seccion Sidebar Image-->
+
+<!--<nav class="image-sidebar">
+    <h3 class="image">IMAGEN</h3>
+        <div class="values-column">
+            <label for="">URL</label>
+            <input type="text" name="img" id="img">
+        </div>
+    <main class="values-column">
+
+        <label for="">FONDO
+            <article class="bg-color-list">
+                <input type="color" name="color" id="color" value="#FFFFFF">
+                <select class="select-list" id="select-list">
+
+                    <option value="none">Ninguno</option>
+                    <option value="light">Aclarar</option>
+                    <option value="dark">Oscurecer</option>
+                    <option value="difference">Diferencia</option>
+                    <option value="brightness">Luminosidad</option>
+                    <option value="multiply">Multiplicar</option>
+
+                </select>
+            </article>
+        </label>
+
+    </main>
+
+    <main class="values-column">
+        <label for="">FILTROS
+            <article class="set-up-values">
+
+                <div class="values-column">
+                    <label for="">BRILLO</label>
+                    <input type="range" name="range" id="range-bright" value="100">
+                </div>
+
+                <div class="values-column">
+                    <label for="">OPACIDAD</label>
+                    <input type="range" name="range" id="range-opacity" value="100">
+                </div>
+
+                <div class="values-column">
+                    <label for="">CONTRASTE</label>
+                    <input type="range" name="range" id="range-contrast" value="0">
+                </div>
+
+                <div class="values-column">
+                    <label for="">DESENFOQUE</label>
+                    <input type="range" name="range" id="range-blur" value="0">
+                </div>
+
+                <div class="values-column">
+                    <label for="">ESCALA DE GRISES</label>
+                    <input type="range" name="range" id="range-gray-scale" value="0">
+                </div>
+
+                <div class="values-column">
+                    <label for="">SEPIA</label>
+                    <input type="range" name="range" id="range-brown" value="0">
+                </div>
+
+                <div class="values-column">
+                    <label for="">HUE</label>
+                    <input type="range" name="range" id="range-hue" value="0">
+                </div>
+
+                <div class="values-column">
+                    <label for="">SATURADO</label>
+                    <input type="range" name="range" id="range-saturated" value="0">
+                </div>
+
+                <div class="values-column">
+                    <label for="">NEGATIVO</label>
+                    <input type="range" name="range" id="range-negative" value="0">
+                </div>
+
+                <button type="reset" class="btn-reset" id="btn-reset">Reestablecer filtros</button>
+
+        </label>
+            </article>
+    </main>
+</nav><--->
+
+<!--Fin Seccion Sidebar Image-->
+
+<!--Comienzo Seccion Sidebar Text-->
+
+<nav class="text-sidebar">
+
+    <h3 class="text">TEXTO</h3>
+
+        <div class="superior">
+
+            <label for="">SUPERIOR</label>
+            <input type="text" value="TOP TEXT" id="top-text">
+            <input type="checkbox" name="" id="no-superior-text"> Sin texto superior 
+
+        </div>
+
+        <div class="lower">
+
+                <label for="">INFERIOR</label>
+                <input type="text" id="bottom-text" value="BOTTOM TEXT">
+                <input type="checkbox" name="" id="no-bottom-text"> Sin texto inferior 
+
+        </div>
+
+        <div class="font">
+        
+            <label for="">FUENTE</label>
+
+                <select class="select-list" id="select-list">
+
+                    <option value="impact">Impact</option>
+                    <option value="arial">Arial</option>
+                    <option value="arial-black">Arial black</option>
+                    <option value="american-type">American typewriter</option>
+                    <option value="monkey">Andale mono</option>
+                    <option value="comic-sans">Comic Sans MS</option>
+                    <option value="helvetica">Helvetica</option>
+                    <option value="verdana">Verdana</option>
+                    <option value="times-new-roman">Times New Roman</option>
+                    
+                </select>
+
+            <input type="number" name="" id="number" min="16" max="90" value="57">
+        
+
+                <button class="button-align">
+                    <i class="far fa-align-left"></i>
+                </button>
+
+                <button class="button-align">
+                    <i class="fa-regular fa-align-center"></i>
+                </button>
+
+                <button class="button-align">
+                    <i class="fa-regular fa-align-right"></i>
+                </button>
+            
+            </div>
+
+            <section class="color-and-background">
+
+                <div class="select-color">
+                    <label for="">COLOR</label>
+                    <input type="color" name="" id="change-color" value="#0000">
+                </div>
+
+                <div class="select-background">
+                    <label for="">FONDO</label>
+                    <input type="color" name="" id="change-background" value="#FFFFFF">
+                </div>
+
+                <input type="checkbox" name="" id="transparent-bg"> Fondo transparente
+
+            </section>
+
+            <section class="contouring">
+
+                <label for="">CONTORNO</label>
+                <button type="button" class="contouring-btn" id="contouring-btn">Ninguno</button>
+                <button type="button" class="contouring-btn" id="contouring-btn">Claro</button>
+                <button type="button" class="contouring-btn" id="contouring-btn">Oscuro</button>
+
+            </section>
+
+            <div class="space">
+                <label for="">ESPACIADO</label>
+                <input type="number" name="" id="number" min="10" max="50" value="22">
+            </div>
+
+            <div class="leading">
+                <label for="">INTERLINEADO</label>
+
+                <select class="select-list">
+
+                    <option value="value-1">1.2</option>
+                    <option value="value-2">1</option>
+                    <option value="value-3">0.8</option>
+                    <option value="value-4">1.5</option>
+                    <option value="value-5">2</option>
+                    <option value="value-6">2.5</option>
+        
+                    
+                </select>
+
+            </div>
+               
+
 <!---Comienzo Seccion Container de Meme-->
 
-<main class="container">
+<section class="container-meme">
 
     <div class="meme">
         <p class="top-text">TOP TEXT</p>
@@ -63,9 +256,11 @@
         <i class="icon ion-md-download"> Descargar meme </i>
     </button>
 
-</main>
+</section>
 
 <!---Fin Seccion Container de Meme-->
+
+
 
 
 <script src="js/script.js"></script>

@@ -1,6 +1,9 @@
 :root {
     --principalPadding: 35px 250px;
-    --backgroundColor: #fff
+    --backgroundColor: #fff;
+    --fontFamily : 'Inter', sans-serif;
+    --inputBackgroundColor: rgb(57, 61, 83);
+    --inputHover: rgb(75, 78, 97);
 
 }
 
@@ -27,7 +30,7 @@
     flex-direction: column;
     align-items: center;
     background-color: rgb(36, 36, 49);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fontFamily);
     color: var(--backgroundColor);
     z-index: 1;
 }
@@ -41,7 +44,7 @@
 
     margin: 6px;
     padding: 7px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fontFamily);
     background-color: rgb(36, 36, 49);
     border-style: none;
     color: var(--backgroundColor);
@@ -68,7 +71,7 @@
 
 /*Sección Container de Meme*/
 
-.container {
+.container-meme {
 
     display: flex;
     align-items: center;
@@ -141,9 +144,179 @@
 }
 
 .download-button:hover {
-    background-color: rgb(1, 61, 1);
+    background-color: rgb(93, 190, 93);
+}
+
+/*Comienzo Seccion Sidebar Image*/
+
+/*.image-sidebar {
+    
+    display: block;
+    flex-direction: column;
+    background-color: rgb(55, 52, 70);
+    text-align: left;
+    font-family: var(--fontFamily);
+    color: var(--backgroundColor);
+    width: 15%;
+    height: 100%;
+    padding: 15px;
+    position:absolute;
+    right: 0;
+    
+}
+
+.image {
+
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.values-column {
+
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    margin: 3px;
+    padding: 5px;
+    font-size: 12px;   
+    font-weight: 400;
+}
+
+#img {
+
+    margin-top: 5px;
+    height: 40px;
+    background-color: var(--inputBackgroundColor);
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+#img:hover {
+
+    background-color: var(--inputHover);
+    outline-color: rgb(75, 78, 97)
+}
+
+#color {
+
+    margin-top: 5px;
+    background-color: var(--inputBackgroundColor);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.set-up-values {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.select-list {
+
+    background-color: var(--inputBackgroundColor);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--backgroundColor);
+}
+
+.select-list:hover {
+
+    background-color: var(--inputHover);
+}
+
+
+input[type="range"] {
+    
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
 }
 
 
 
+input[type="range"]::-webkit-slider-runnable-track {
+
+    background: var(--inputBackgroundColor);
+    height: 0.5rem;
+
+}
+
+
+input[type="range"]::-moz-range-track {
+
+    background: #053a5f;
+    height: 0.5rem;
+
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -1px; 
+    background-color: #a1a7a8;
+    height: 11px;
+    width: 11px;    
+    border-radius: 5px;
+
+}
+
+
+
+#btn-reset {
+
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 8px;
+    width: 75%;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #50585a;
+    color: #fff;
+    transition: 0.1s;
+
+}
+
+#btn-reset:hover {
+
+    background-color: var(--inputHover);
+
+}*/
+
+/*Fin Seccion Sidebar Image*/
+
+
+/*Comienzo Seccion Sidebar Text*/
+
+.text-sidebar {
+    
+    display: block;
+    flex-direction: column;
+    background-color: rgb(55, 52, 70);
+    text-align: left;
+    font-family: var(--fontFamily);
+    color: var(--backgroundColor);
+    width: 15%;
+    height: 100%;
+    padding: 15px;
+    position:absolute;
+    right: 0;
+
+}
 
