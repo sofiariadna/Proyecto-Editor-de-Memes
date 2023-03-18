@@ -1,10 +1,14 @@
 :root {
     --principalPadding: 35px 250px;
-    --backgroundColor: #fff;
+    --fontColor: #fff;
     --fontFamily : 'Inter', sans-serif;
     --inputBackgroundColor: rgb(57, 61, 83);
     --inputHover: rgb(75, 78, 97);
-    
+    --bodyBackgroundColor: rgb(23, 26, 43);
+    --headerBackgroundColor:  rgb(36, 36, 49);
+
+
+
     /*Estilos para las sidebar*/
 
     --displaySidebar: block;
@@ -12,13 +16,24 @@
     --backgroundColorSidebar: rgb(55, 52, 70);
     --textAlignSidebar: left;
     --fontFamilySidebar: var(--fontFamily);
-    --colorSidebar: var(--backgroundColor);
+    --colorSidebar: var(--fontColor);
     --widthSidebar: 15%;
     --heightSidebar: 100%;
     --paddingSidebar: 15px;
     --positionSidebar:absolute;
     --rightSidebar: 0;
 
+}
+
+[data-theme="light-theme"] {
+    --bodyBackgroundColor: #e7e7e7;
+    --headerBackgroundColor: #ababab;
+    --fontColor: #353333;
+    --backgroundColorSidebar: #f8f6f6;
+    --colorSidebar: var(--fontColor);
+    --inputBackgroundColor: #ababab;
+    --inputHover: #e7e7e7;
+       
 }
 
 * {
@@ -28,8 +43,8 @@
     
 }
 
-.body {
-    background-color: rgb(23, 26, 43);
+body {
+    background-color: var(--bodyBackgroundColor);
 }
 
 
@@ -37,15 +52,16 @@
 
 .title {
     margin-top: 19px;
+    color: var(--fontColor);
 }
 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(36, 36, 49);
+    background-color: var(--headerBackgroundColor);
     font-family: var(--fontFamily);
-    color: var(--backgroundColor);
+    color: var(--fontColor);
     z-index: 1;
 }
 
@@ -59,9 +75,9 @@
     margin: 6px;
     padding: 7px;
     font-family: var(--fontFamily);
-    background-color: rgb(36, 36, 49);
+    background-color: var(--headerBackgroundColor);
     border-style: none;
-    color: var(--backgroundColor);
+    color: var(--fontColor);
     cursor: pointer;
     line-height: 1;
     font-size: 0.8rem;
@@ -73,7 +89,7 @@
 .button:hover {
 
     background-color: rgb(125, 131, 136);
-    color: var(--backgroundColor);
+    color: var(--fontColor);
     border-radius: 4px;
     
     
@@ -137,7 +153,7 @@
 
     text-align: center;
     padding: var(--principalPadding);
-    background-color: var(--backgroundColor);
+    background-color: #fff;
     
 }
 
@@ -151,7 +167,7 @@
     background-color: rgb(10, 105, 10);
     border-style: none;
     border-radius: 3px;
-    color: var(--backgroundColor);
+    color: #fff;
     cursor: pointer;
     transition: 0.1s;
     
@@ -163,14 +179,14 @@
 
 /*Comienzo Seccion Sidebar Image*/
 
-/*.image-sidebar {
+.image-sidebar {
     
     display: block;
     flex-direction: column;
-    background-color: rgb(55, 52, 70);
+    background-color: var(--backgroundColorSidebar);
     text-align: left;
     font-family: var(--fontFamily);
-    color: var(--backgroundColor);
+    color: var(--colorSidebar);
     width: 15%;
     height: 100%;
     padding: 15px;
@@ -311,14 +327,14 @@ input[type="range"]::-webkit-slider-thumb {
 
     background-color: var(--inputHover);
 
-}*/
+}
 
 /*Fin Seccion Sidebar Image*/
 
 
 /*Comienzo Seccion Sidebar Text*/
 
-.text-sidebar {
+/*.text-sidebar {
     
     display: var(--displaySidebar);
     flex-direction: var(--flexDirectionSidebar);
@@ -364,7 +380,7 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: var(--inputBackgroundColor);
     border-radius: 5px;
     border: none;
-    color: #fff;
+    color: var(--fontColor);
     font-size: 0.70rem;
     transition: 0.3s;
 
@@ -408,7 +424,7 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: var(--inputBackgroundColor);
     border-radius: 5px;
     border: none;
-    color: #fff;
+    color: var(--fontColor);
     font-size: 0.70rem;
     transition: 0.3s;
 
@@ -510,7 +526,7 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: var(--inputBackgroundColor);
     border-radius: 5px;
     border: none;
-    color: #fff;
+    color: var(--fontColor);
     font-size: 0.70rem;
     cursor: pointer;
     transition: 0.3s;
