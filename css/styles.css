@@ -99,6 +99,7 @@ body {
 /*Fin Sección Header*/
 
 
+
 /*Sección Container de Meme*/
 
 .container-meme {
@@ -112,6 +113,7 @@ body {
     font-weight: bolder;
     font-size: 20px;
     
+    
 }
 
 .top-text {
@@ -122,11 +124,15 @@ body {
 
 }
 
-#figure {
+#meme-box {
 
     display: flex;
     flex-grow: 1;
     background-color: black;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 0px;
     height: 250px;
     width: 100%;
@@ -134,20 +140,7 @@ body {
 
 }
 
-#image {
-    
-    display: flex;
-    flex-grow: 1;
-    height: 250px;
-    width: 100%;
-    padding: 0px;
-    background-color: rgb(0, 0, 0);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-    
-}
+
 
 .bottom-text {
 
@@ -176,6 +169,10 @@ body {
 .download-button:hover {
     background-color: rgb(93, 190, 93);
 }
+
+/*Fin Seccion Container de Meme*/
+
+
 
 /*Comienzo Seccion Sidebar Image*/
 
@@ -549,4 +546,5 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     flex-direction: column;
 }
+
 

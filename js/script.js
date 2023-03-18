@@ -2,9 +2,11 @@ const $=(selector)=>document.querySelector(selector)
 
 //Imagen que ingresará el usuario//
 
-/*const url = prompt (`Ingrese su imagen`)
+$("#img").addEventListener("input", () => {
+    const url = $("#img").value
+    $("#meme-box").style.backgroundImage = `url (${url})`
+})
 
-$("#image").src = url*/
 
 //Dark Mode//
 
