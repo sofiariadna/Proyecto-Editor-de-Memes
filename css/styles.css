@@ -129,10 +129,10 @@ body {
     display: flex;
     flex-grow: 1;
     background-color: black;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     padding: 0px;
     height: 250px;
     width: 100%;
@@ -235,6 +235,7 @@ body {
     border: none;
     padding: 5px;
     border-radius: 5px;
+    
     
 }
 
