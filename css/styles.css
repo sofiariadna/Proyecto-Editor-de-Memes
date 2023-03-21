@@ -121,6 +121,7 @@ body {
     text-align: center;
     padding: var(--principalPadding);
     background-color: #fff;
+    
 
 }
 
@@ -147,6 +148,7 @@ body {
     text-align: center;
     padding: var(--principalPadding);
     background-color: #fff;
+    
     
 }
 
@@ -356,6 +358,7 @@ input[type="range"]::-webkit-slider-thumb {
     margin-bottom: 25px;
     margin-top: 10px;
     font-weight: bold;
+    
 
 }
 
@@ -413,6 +416,20 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     flex-direction: column;
 
+}
+
+.select-list-2 {
+
+    background-color: var(--inputBackgroundColor);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--backgroundColor);
+}
+
+.select-list-2:hover {
+
+    background-color: var(--inputHover);
 }
 
 #number {

@@ -104,7 +104,7 @@ $("#show-image-sidebar").addEventListener("click", () => {
 
 $("#top-text").addEventListener("input", () => {
     const innerText = $("#top-text").value
-    $("#superior-text").innerText = innerText
+    $("#superior-text").innerText = innerText.toUpperCase()
 })
 
 //Top text checkbox//
@@ -125,7 +125,7 @@ $("#no-superior-text").addEventListener("input", () => {
 
 $("#bottom-text").addEventListener("input", () => {
     const innerText = $("#bottom-text").value
-    $("#lower-text").innerText = innerText
+    $("#lower-text").innerText = innerText.toUpperCase()
 })
 
 //Bottom text checkbox//
@@ -142,3 +142,23 @@ $("#no-bottom-text").addEventListener("input", () => {
     }
 })
 
+//Modify top text's font family//
+
+$("#select-list-2").addEventListener("click", () => {
+    const selectList = $("#select-list-2").value
+    $("#superior-text").style.fontFamily = selectList
+})
+
+//Modify bottom text's font family//
+
+$("#select-list-2").addEventListener("click", () => {
+    const selectList = $("#select-list-2").value
+    $("#lower-text").style.fontFamily = selectList
+})
+
+//Modify font size//
+
+$("#number").addEventListener("input", () => {
+    $(".top-text").style.fontSize = `${$("#number").value}px`
+    $(".bottom-text").style.fontSize = `${$("#number").value}px`
+})
