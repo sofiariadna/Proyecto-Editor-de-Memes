@@ -96,6 +96,49 @@ $("#show-image-sidebar").addEventListener("click", () => {
 })
 
 
+//Text sidebar functionalities//
 
 
+
+//Modify top text//
+
+$("#top-text").addEventListener("input", () => {
+    const innerText = $("#top-text").value
+    $("#superior-text").innerText = innerText
+})
+
+//Top text checkbox//
+
+$("#no-superior-text").addEventListener("input", () => {
+
+    const isChecked = $("#no-superior-text").checked
+    
+    if (isChecked) {
+        $("#superior-text").style.backgroundColor = "black"
+    }
+    else {
+        $("#superior-text").style.backgroundColor = "#ffff"
+    }
+})
+
+//Modify bottom text//
+
+$("#bottom-text").addEventListener("input", () => {
+    const innerText = $("#bottom-text").value
+    $("#lower-text").innerText = innerText
+})
+
+//Bottom text checkbox//
+
+$("#no-bottom-text").addEventListener("input", () => {
+
+    const isChecked = $("#no-bottom-text").checked
+    
+    if (isChecked) {
+        $("#lower-text").style.backgroundColor = "black"
+    }
+    else {
+        $("#lower-text").style.backgroundColor = "#ffff"
+    }
+})
 
