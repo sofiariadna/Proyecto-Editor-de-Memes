@@ -31,11 +31,11 @@
 
     <nav class="buttons-container">
 
-        <button type="button" class="button"> 
+        <button type="button" class="button" id="show-image-sidebar"> 
         <i class="icon ion-md-images"> Imagen </i>
         </button>
 
-        <button type="button" class="button">    
+        <button type="button" class="button" id="show-text-sidebar">    
         <i class="icon ion-ios-create"> Texto </i>
         </button>
 
@@ -52,7 +52,7 @@
 
 <!--Comienzo Seccion Sidebar Image-->
 
-<nav class="image-sidebar">
+<nav class="image-sidebar" id="image-sidebar">
     <h3 class="image">IMAGEN</h3>
         <div class="values-column">
             <label for="">URL</label>
@@ -94,37 +94,37 @@
 
                 <div class="values-column">
                     <label for="">CONTRASTE</label>
-                    <input type="range" name="range" id="range-contrast" min= "1%" max= "1000%" step= "0.1%" value="0%">
+                    <input type="range" name="range" id="range-contrast" min= "100" max= "1000" value="100">
                 </div>
 
                 <div class="values-column">
                     <label for="">DESENFOQUE</label>
-                    <input type="range" name="range" id="range-blur" min= "0px" max= "10px" step= "0.1px" value="0px">
+                    <input type="range" name="range" id="range-blur" min= "0" max= "10" step= "0.1" value="0">
                 </div>
 
                 <div class="values-column">
                     <label for="">ESCALA DE GRISES</label>
-                    <input type="range" name="range" id="range-gray-scale" min= "0%" max= "100%" value="0%">
+                    <input type="range" name="range" id="range-gray-scale" min= "0" max= "100" value="0">
                 </div>
 
                 <div class="values-column">
                     <label for="">SEPIA</label>
-                    <input type="range" name="range" id="range-brown" min= "0%" max= "100%" value="0%">
+                    <input type="range" name="range" id="range-brown" min= "0" max= "100" value="0">
                 </div>
 
                 <div class="values-column">
                     <label for="">HUE</label>
-                    <input type="range" name="range" id="range-hue" min= "0deg" max= "359deg" value="0deg">
+                    <input type="range" name="range" id="range-hue" min= "0" max= "359" value="0">
                 </div>
 
                 <div class="values-column">
                     <label for="">SATURADO</label>
-                    <input type="range" name="range" id="range-saturated" min= "100%" max= "1000%" step= "10%" value="100%">
+                    <input type="range" name="range" id="range-saturated" min= "100" max= "1000" value="0">
                 </div>
 
                 <div class="values-column">
                     <label for="">NEGATIVO</label>
-                    <input type="range" name="range" id="range-negative" min= "0" max= "1" step= "0.1" value="0">
+                    <input type="range" name="range" id="range-negative" min= "0" max= "100" value="0">
                 </div>
 
                 <button type="reset" class="btn-reset" id="btn-reset">Reestablecer filtros</button>
@@ -138,7 +138,7 @@
 
 <!--Comienzo Seccion Sidebar Text-->
 
-<!--<nav class="text-sidebar">
+<nav class="text-sidebar" id="text-sidebar" hidden="true">
 
     <h3 class="text">TEXTO</h3>
 
@@ -262,7 +262,7 @@
 
             </div>
 </nav>
-<!-Fin Seccion Sidebar Text<!-->            
+<!--Fin Seccion Sidebar Text<!-->            
 
 <!---Comienzo Seccion Container de Meme-->
 

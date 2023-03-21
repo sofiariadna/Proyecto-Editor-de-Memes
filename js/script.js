@@ -1,6 +1,6 @@
 const $=(selector)=>document.querySelector(selector)
 
-//Imagen que ingresará el usuario//
+//Enter image//
 
 $("#img").addEventListener("input", () => {
     const url = $("#img").value
@@ -21,7 +21,7 @@ $("#change-theme").addEventListener("click", () => {
     }
 })
 
-//Cambiar color de fondo de la imagen//
+//Change background color//
 
 $("#color").addEventListener("input", () => {
     const currentColor = $("#color").value
@@ -30,14 +30,14 @@ $("#color").addEventListener("input", () => {
     }
 })
 
-//Filtros del fondo de la imagen//
+//Image filters//
 
 $("#select-list").addEventListener("click", () => {
     const selectList = $("#select-list").value
     $("#meme-box").style.backgroundBlendMode = selectList
 })
 
-//Cambiar filtros//
+//Change image filters//
 
 const imageFilters = () => {
     $("#meme-box").style.filter = `brightness(${$("#range-bright").value}) opacity(${$("#range-opacity").value}) contrast(${$("#range-contrast").value}%) blur(${$("#range-blur").value}px) grayscale(${$("#range-gray-scale").value}%) sepia(${$("#range-brown").value}%) hue-rotate(${$("#range-hue").value}deg) saturate(${$("#range-saturated").value}%) invert(${$("#range-negative").value})`
@@ -60,4 +60,42 @@ $("#range-hue").addEventListener("change", imageFilters)
 $("#range-saturated").addEventListener("change", imageFilters)
 
 $("#range-negative").addEventListener("change", imageFilters)
+
+//Reset image filters//
+
+const reset = () => {
+
+    $("#range-bright").value = "1"
+    $("#range-opacity").value ="1"
+    $("#range-contrast").value = "0"
+    $("#range-contrast").value = "0"
+    $("#range-blur").value = "0"
+    $("#range-gray-scale").value = "0"
+    $("#range-brown").value = "0"
+    $("#range-hue").value = "0"
+    $("#range-saturated").value = "0"
+    $("#range-negative").value = "0"
+    $("#meme-box").style.filter = "none"
+
+}
+
+$("#btn-reset").addEventListener ("click", reset)
+
+//Hide image sidebar//
+
+$("#show-text-sidebar").addEventListener("click", () => {
+    $("#image-sidebar").style.display = "none"
+    $("#text-sidebar").style.display = "block"
+})
+
+//Show image sidebar//
+
+$("#show-image-sidebar").addEventListener("click", () => {
+    $("#text-sidebar").style.display = "none"
+    $("#image-sidebar").style.display = "block"
+})
+
+
+
+
 

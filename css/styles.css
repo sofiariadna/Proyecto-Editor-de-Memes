@@ -332,7 +332,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 /*Comienzo Seccion Sidebar Text*/
 
-/*.text-sidebar {
+.text-sidebar {
     
     display: var(--displaySidebar);
     flex-direction: var(--flexDirectionSidebar);
@@ -345,6 +345,7 @@ input[type="range"]::-webkit-slider-thumb {
     padding: var(--paddingSidebar);
     position:var(--positionSidebar);
     right: var(--rightSidebar);
+    display: none;
 
 }
 
