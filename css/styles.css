@@ -108,7 +108,8 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 25px auto;
-    width: 20%;
+    height: 100%;
+    width: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
     font-size: 20px;
@@ -116,11 +117,17 @@ body {
     
 }
 
+.meme {
+    position: relative;
+}
+
 .top-text {
 
     text-align: center;
-    padding: var(--principalPadding);
+    padding: 30px;
+    width: 550px;
     background-color: #fff;
+    font-size: 40px;
     
 
 }
@@ -134,9 +141,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    padding: 0px;
+    padding: 30px;
+    width: 550px;
     height: 250px;
-    width: 100%;
+    
    
 
 }
@@ -146,8 +154,10 @@ body {
 .bottom-text {
 
     text-align: center;
-    padding: var(--principalPadding);
+    padding: 30px;
+    width: 550px;
     background-color: #fff;
+    font-size: 40px;
     
     
 }

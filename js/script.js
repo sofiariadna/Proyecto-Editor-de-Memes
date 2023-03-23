@@ -109,15 +109,15 @@ $("#top-text").addEventListener("input", () => {
 
 //Top text checkbox//
 
-$("#no-superior-text").addEventListener("input", () => {
+$("#no-superior-text").addEventListener("click", () => {
 
     const isChecked = $("#no-superior-text").checked
     
     if (isChecked) {
-        $("#superior-text").style.backgroundColor = "black"
+        $(".top-text").style.display = "none"
     }
     else {
-        $("#superior-text").style.backgroundColor = "#ffff"
+        $(".top-text").style.display = "block"
     }
 })
 
@@ -135,10 +135,10 @@ $("#no-bottom-text").addEventListener("input", () => {
     const isChecked = $("#no-bottom-text").checked
     
     if (isChecked) {
-        $("#lower-text").style.backgroundColor = "black"
+        $("#lower-text").style.display = "none"
     }
     else {
-        $("#lower-text").style.backgroundColor = "#ffff"
+        $("#lower-text").style.display = "block"
     }
 })
 
@@ -162,3 +162,139 @@ $("#number").addEventListener("input", () => {
     $(".top-text").style.fontSize = `${$("#number").value}px`
     $(".bottom-text").style.fontSize = `${$("#number").value}px`
 })
+
+//Text align buttons//
+
+$("#left-button").addEventListener("click", () => {
+    $(".top-text").style.textAlign = "left"
+})
+
+$("#center-button").addEventListener("click", () => {
+    $(".top-text").style.textAlign = "center" 
+})
+
+$("#right-button").addEventListener("click", () => {
+    $(".top-text").style.textAlign = "right"
+})
+
+$("#left-button").addEventListener("click", () => {
+    $(".bottom-text").style.textAlign = "left"
+})
+
+$("#center-button").addEventListener("click", () => {
+    $(".bottom-text").style.textAlign = "center" 
+})
+
+$("#right-button").addEventListener("click", () => {
+    $(".bottom-text").style.textAlign = "right"
+})
+
+//Change text color//
+
+$("#change-color").addEventListener("input", () => {
+    const currentColor = $("#change-color").value
+    if (currentColor) {
+        $("#superior-text").style.color = currentColor
+    }
+})
+
+$("#change-color").addEventListener("input", () => {
+    const currentColor = $("#change-color").value
+    if (currentColor) {
+        $("#lower-text").style.color = currentColor
+    }
+})
+
+//Change text background//
+
+$("#change-bg").addEventListener("input", () => {
+    $("#superior-text").style.background = `${$("#change-bg").value}`
+})
+
+$("#change-bg").addEventListener("input", () => {
+    $("#lower-text").style.background = `${$("#change-bg").value}`
+})
+
+//Transparent bg//
+
+$("#transparent-bg").addEventListener("input", () => {
+
+    const isChecked = $("#transparent-bg").checked
+    
+    if (isChecked) {
+
+        $("#superior-text").style.backgroundColor = "transparent"
+        $("#superior-text").style.position = "absolute"
+        
+    }
+    else {
+
+        $("#superior-text").style.backgroundColor = `${$("#change-bg").value}`
+        $("#superior-text").style.position = "relative"
+        
+    }
+})
+
+$("#transparent-bg").addEventListener("input", () => {
+
+    const isChecked = $("#transparent-bg").checked
+
+    if (isChecked) {
+
+        $("#lower-text").style.backgroundColor = "transparent"
+        $("#lower-text").style.position = "absolute"
+        $("#lower-text").style.bottom = "0"
+        
+    }
+
+    else {
+
+        $("#lower-text").style.backgroundColor = `${$("#change-bg").value}`
+        $("#lower-text").style.position = "relative"
+        
+    }
+})
+
+//Contouring//
+
+$("#contouring-btn-none").addEventListener("click", () => {
+    $("#superior-text").style.textShadow = "none"
+    $("#lower-text").style.textShadow = "none"
+})
+
+$("#contouring-btn-clear").addEventListener("click", () => {
+
+    $("#superior-text").style.textShadow = "2px 2px 2px #ffff"
+    $("#lower-text").style.textShadow = "2px 2px 2px #ffff"
+
+})
+
+$("#contouring-btn-dark").addEventListener("click", () => {
+
+    $("#superior-text").style.textShadow = "2px 2px 2px black"
+    $("#lower-text").style.textShadow = "2px 2px 2px black"
+    
+})
+
+//Space//
+
+$("#space"),addEventListener("input", () => {
+
+    $("#superior-text").style.padding = `${$("#space").value}px`
+    $("#lower-text").style.padding = `${$("#space").value}px`
+
+})
+
+//Leading//
+
+$("#leading").addEventListener("input", () => {
+
+    $("#superior-text").style.lineHeight = `${$("#leading").value}`
+    $("#lower-text").style.lineHeight = `${$("#leading").value}`
+    
+})
+
+
+
+
+
