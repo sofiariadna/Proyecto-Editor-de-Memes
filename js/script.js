@@ -29,7 +29,7 @@ $(".close-panel").addEventListener("click", () => {
 
 //Close text button//
 
-$(".close-panel").addEventListener("click", () => {
+$("#close-text-sidebar").addEventListener("click", () => {
     $("#text-sidebar").style.display = "none"
 })
 
