@@ -21,6 +21,19 @@ $("#change-theme").addEventListener("click", () => {
     }
 })
 
+//Close panel button//
+
+$(".close-panel").addEventListener("click", () => {
+    $("#image-sidebar").style.display = "none"
+})
+
+//Close text button//
+
+$(".close-panel").addEventListener("click", () => {
+    $("#text-sidebar").style.display = "none"
+})
+
+
 //Change background color//
 
 $("#color").addEventListener("input", () => {

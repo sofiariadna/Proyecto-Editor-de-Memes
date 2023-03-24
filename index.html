@@ -46,6 +46,11 @@
         <button type="button" class="button" id="change-theme">
         <i class="icon ion-ios-sunny"> Modo oscuro </i>
         </button>
+
+        <button type="button" class="button" id="change-theme-light" hidden="true">
+        <i class="icon ion-md-heart"> Modo claro </i>
+        </button>
+
     
     </nav>
 
@@ -57,6 +62,11 @@
 <!--Comienzo Seccion Sidebar Image-->
 
 <nav class="image-sidebar" id="image-sidebar">
+
+    <button class="close-panel" id="close-panel">
+        <i class="icon ion-md-close" aria-hidden="true"></i>
+    </button>
+    
     <h3 class="image">IMAGEN</h3>
         <div class="values-column">
             <label for="">URL</label>
@@ -66,7 +76,7 @@
 
         <label for="">FONDO
             <article class="bg-color-list">
-                <input type="color" name="color" id="color" value="#FFFFFF">
+                    <input type="color" name="color" id="color" value="#FFFFFF">
                 <select class="select-list" id="select-list">
 
                     <option value="unset" id="unset">Ninguno</option>
@@ -143,6 +153,10 @@
 <!--Comienzo Seccion Sidebar Text-->
 
 <nav class="text-sidebar" id="text-sidebar" hidden="true">
+
+    <button class="close-panel">
+        <i class="icon ion-md-close" aria-hidden="true"></i>
+    </button>
 
     <h3 class="text">TEXTO</h3>
 
