@@ -294,6 +294,16 @@ $("#leading").addEventListener("input", () => {
     
 })
 
+//Download meme button//
+
+const downloadMeme = () => {
+    domtoimage.toBlob($(".meme")).then((blob) => {
+        saveAs(blob, 'mi-meme.png')
+      })
+}
+
+$(".download-button").addEventListener("click", downloadMeme)
+
 
 
 
