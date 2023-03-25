@@ -601,6 +601,23 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
 }
 
+/*Media queries*/
+
+@media (min-width: 400px) {
+    #image-sidebar {
+        display: none;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    #text-sidebar {
+        display: none;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 
 
 
