@@ -24,9 +24,7 @@
 
 ## Watch my project 🤓
 
-### GitHub: <a name = "https://github.com/sofiariadna/Proyecto-Editor-de-Memes"> Click here </a>
-
-### GitHub pages : <a name = "https://sofiariadna.github.io/Proyecto-Editor-de-Memes/"> Click here </a>
-
+1. [GitHub](https://github.com/sofiariadna/Proyecto-Editor-de-Memes)
+2. [GitHub Pages](https://sofiariadna.github.io/Proyecto-Editor-de-Memes/)
 
 
